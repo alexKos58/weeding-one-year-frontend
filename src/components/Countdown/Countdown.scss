@@ -1,0 +1,91 @@
+@import "../../styles/variables";
+
+.countdown{
+
+    padding:120px 80px;
+
+    text-align:center;
+
+}
+
+.countdown h2{
+
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:48px;
+
+    margin-bottom:60px;
+
+}
+
+.countdown__grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.countdown__item{
+
+    background:$paper;
+
+    padding:35px;
+
+    border-radius:$radius;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.countdown__number{
+
+    font-size:60px;
+
+    color:$gold;
+
+    font-family:"Cormorant Garamond", serif;
+
+}
+
+.countdown__item span{
+
+    display:block;
+
+    margin-top:10px;
+
+    color:$text-light;
+
+}
+
+.countdown p{
+
+    margin-top:50px;
+
+    font-size:18px;
+
+    color:$text-light;
+
+}
+
+@media(max-width:768px){
+
+    .countdown{
+
+        padding:80px 24px;
+
+    }
+
+    .countdown__grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}

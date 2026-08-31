@@ -1,0 +1,255 @@
+@import "../../styles/variables";
+
+.event{
+
+    padding:100px 80px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:linear-gradient(
+        180deg,
+        $paper,
+        $background
+    );
+
+}
+
+.event::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-140px;
+
+    right:-140px;
+
+    width:420px;
+
+    height:420px;
+
+    border:1px solid rgba($gold, .1);
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+}
+
+.event::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-120px;
+
+    left:-120px;
+
+    width:360px;
+
+    height:360px;
+
+    border:1px solid rgba($gold, .08);
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+}
+
+.event h2{
+
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:44px;
+
+    font-weight:600;
+
+    color:$text;
+
+    text-align:center;
+
+    margin-bottom:16px;
+
+    position:relative;
+
+    z-index:1;
+
+}
+
+.event__subtitle{
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    color:$text-light;
+
+    text-align:center;
+
+    max-width:520px;
+
+    margin:0 auto 60px;
+
+    position:relative;
+
+    z-index:1;
+
+}
+
+.event__cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3, 1fr);
+
+    gap:30px;
+
+    max-width:1100px;
+
+    margin:0 auto;
+
+    position:relative;
+
+    z-index:1;
+
+}
+
+.event__card{
+
+    background:$white;
+
+    border-radius:$radius;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    box-shadow:0 12px 40px $shadow;
+
+    border:1px solid rgba($gold, .15);
+
+    transition:$transition;
+
+}
+
+.event__card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 24px 60px rgba($gold, .25);
+
+    border-color:rgba($gold, .4);
+
+}
+
+.event__icon{
+
+    width:72px;
+
+    height:72px;
+
+    margin:0 auto 24px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        $gold-light,
+        $gold
+    );
+
+    color:$white;
+
+    font-size:28px;
+
+    box-shadow:0 8px 24px rgba($gold, .3);
+
+}
+
+.event__card h3{
+
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    color:$gold;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    margin-bottom:12px;
+
+}
+
+.event__card p{
+
+    font-size:16px;
+
+    line-height:1.7;
+
+    color:$text;
+
+    white-space:pre-line;
+
+}
+
+@media(max-width:1024px){
+
+    .event{
+
+        padding:80px 40px;
+
+    }
+
+    .event__cards{
+
+        grid-template-columns:1fr;
+
+        max-width:480px;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .event{
+
+        padding:60px 24px;
+
+    }
+
+    .event h2{
+
+        font-size:34px;
+
+    }
+
+    .event__subtitle{
+
+        font-size:16px;
+
+        margin-bottom:40px;
+
+    }
+
+    .event__card{
+
+        padding:32px 24px;
+
+    }
+
+}

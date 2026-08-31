@@ -1,0 +1,51 @@
+@import "../../../styles/variables";
+
+.button{
+
+    width:250px;
+
+    height:56px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:linear-gradient(
+
+            135deg,
+
+            $gold,
+
+            darken($gold,8%)
+
+    );
+
+    color:white;
+
+    font-size:15px;
+
+    letter-spacing:1px;
+
+    font-weight:600;
+
+    transition:$transition;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 24px rgba($gold,.35);
+
+}
+
+.button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 16px 40px rgba($gold,.45);
+
+}
+
+.button:active{
+
+    transform:scale(.98);
+
+}

@@ -1,0 +1,111 @@
+@import "../../styles/variables";
+
+.decor {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    color: $gold;
+    overflow: hidden;
+
+    svg {
+        position: absolute;
+        display: block;
+    }
+
+    &__branch {
+        width: 260px;
+        height: 260px;
+
+        &--top-left {
+            top: -30px;
+            left: -40px;
+            transform: rotate(-10deg);
+        }
+
+        &--bottom-right {
+            bottom: -30px;
+            right: -40px;
+            transform: rotate(180deg);
+        }
+    }
+
+    &__flower {
+        width: 90px;
+        height: 90px;
+
+        &--top-right {
+            top: 24px;
+            right: 40px;
+        }
+
+        &--bottom-left {
+            bottom: 24px;
+            left: 40px;
+        }
+    }
+
+    &__leaf {
+        width: 34px;
+        height: 34px;
+
+        &--1 {
+            top: 18%;
+            left: 8%;
+            transform: rotate(25deg);
+        }
+
+        &--2 {
+            top: 30%;
+            right: 10%;
+            transform: rotate(-30deg);
+        }
+
+        &--3 {
+            bottom: 28%;
+            left: 12%;
+            transform: rotate(-15deg);
+        }
+
+        &--4 {
+            bottom: 15%;
+            right: 14%;
+            transform: rotate(40deg);
+        }
+
+        &--5 {
+            top: 55%;
+            left: 4%;
+            transform: rotate(10deg);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .decor {
+        &__branch {
+            width: 180px;
+            height: 180px;
+        }
+
+        &__flower {
+            width: 60px;
+            height: 60px;
+
+            &--top-right {
+                top: 12px;
+                right: 16px;
+            }
+
+            &--bottom-left {
+                bottom: 12px;
+                left: 16px;
+            }
+        }
+
+        &__leaf {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}

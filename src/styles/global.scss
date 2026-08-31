@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap');
+@import "./variables";
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+button{
+
+    cursor:pointer;
+
+}
+
+body {
+
+    background:
+        radial-gradient(circle at top left,
+            rgba(194,161,90,.08),
+            transparent 30%),
+
+        radial-gradient(circle at bottom right,
+            rgba(194,161,90,.05),
+            transparent 35%),
+
+        $background;
+
+}
